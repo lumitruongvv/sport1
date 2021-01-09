@@ -1,0 +1,390 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.2.160/W32 for ARM                  09/Jan/2021  22:45:21
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Exe\treadmill_central.out
+#    Map file     =  
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\List\treadmill_central.map
+#    Command line =  
+#        -f C:\Users\vuvan\AppData\Local\Temp\EWD5D6.tmp
+#        (D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\adc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\appbluetooth_main.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\appfingerprint_main.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\bluetooth.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\clock.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\debug.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\delay.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\Fingerprintt.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\i2c.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\lcd.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\main.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\misc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\nvic.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\queue.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\spi.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\startup_stm32f10x_md.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_adc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_bkp.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_can.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_cec.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_crc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_dac.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_dbgmcu.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_dma.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_exti.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_flash.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_fsmc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_gpio.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_i2c.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_it.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_iwdg.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_pwr.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_rcc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_rtc.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_sdio.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_spi.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_tim.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_usart.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\stm32f10x_wwdg.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\system_stm32f10x.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\systick.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\touch.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\uart.o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj\xor.o
+#        --no_out_extension -o
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Exe\treadmill_central.out
+#        --map
+#        D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\List\treadmill_central.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.1_2\arm\config\linker\ST\stm32f103x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0xec
+  .intvec            ro code   0x800'0000   0xec  startup_stm32f10x_md.o [1]
+                             - 0x800'00ec   0xec
+
+"P1":                                      0xb7c
+  .text              ro code   0x800'00ec  0x1ba  stm32f10x_usart.o [1]
+  .text              ro code   0x800'02a6   0x3a  zero_init3.o [3]
+  .text              ro code   0x800'02e0  0x100  stm32f10x_rcc.o [1]
+  .text              ro code   0x800'03e0  0x152  uart.o [1]
+  .text              ro code   0x800'0534   0xc0  stm32f10x_gpio.o [1]
+  .text              ro code   0x800'05f4  0x118  system_stm32f10x.o [1]
+  .text              ro code   0x800'070c   0xa6  ABImemcpy.o [3]
+  .text              ro code   0x800'07b4   0x94  bluetooth.o [1]
+  .text              ro code   0x800'0848   0x7e  queue.o [1]
+  .text              ro code   0x800'08c6   0x26  xor.o [1]
+  .text              ro code   0x800'08ec    0xc  memcpy.o [3]
+  .text              ro code   0x800'08f8   0x8c  systick.o [1]
+  .text              ro code   0x800'0984   0x80  misc.o [1]
+  .text              ro code   0x800'0a04   0x68  stm32f10x_it.o [1]
+  .text              ro code   0x800'0a6c   0x2c  copy_init3.o [3]
+  .text              ro code   0x800'0a98   0x28  data_init.o [3]
+  .text              ro code   0x800'0ac0   0x24  nvic.o [1]
+  .iar.init_table    const     0x800'0ae4   0x24  - Linker created -
+  .text              ro code   0x800'0b08   0x1e  cmain.o [3]
+  .text              ro code   0x800'0b26    0x4  low_level_init.o [2]
+  .text              ro code   0x800'0b2a   0x14  main.o [1]
+  .text              ro code   0x800'0b3e    0x4  exit.o [2]
+  .text              ro code   0x800'0b44    0xa  cexit.o [3]
+  .text              ro code   0x800'0b50   0x14  exit.o [4]
+  Initializer bytes  const     0x800'0b64   0x18  <for P2-1>
+  .text              ro code   0x800'0b7c   0x10  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0b8c    0xc  cstartup_M.o [3]
+  .text              ro code   0x800'0b98    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0b9c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0ba0    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0ba4    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0ba8    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bac    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bb0    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bb4    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bb8    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bbc    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bc0    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bc4    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bc8    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bcc    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bd0    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bd4    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bd8    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bdc    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0be0    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0be4    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0be8    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bec    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bf0    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bf4    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bf8    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0bfc    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c00    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c04    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c08    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c0c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c10    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c14    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c18    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c1c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c20    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c24    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c28    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c2c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c30    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c34    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c38    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c3c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c40    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c44    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c48    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c4c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c50    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c54    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c58    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c5c    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c60    0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'0c64    0x4  startup_stm32f10x_md.o [1]
+  .rodata            const     0x800'0c68    0x0  zero_init3.o [3]
+  .rodata            const     0x800'0c68    0x0  copy_init3.o [3]
+                             - 0x800'0c68  0xb7c
+
+"P2", part 1 of 3:                          0x18
+  P2-1                        0x2000'0000   0x18  <Init block>
+    .data            inited   0x2000'0000   0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'0010    0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'0014    0x4  system_stm32f10x.o [1]
+                            - 0x2000'0018   0x18
+
+"P2", part 2 of 3:                          0xf8
+  .bss               zero     0x2000'0018   0xa4  bluetooth.o [1]
+  .bss               zero     0x2000'00bc   0x38  bluetooth.o [1]
+  .bss               zero     0x2000'00f4    0xc  bluetooth.o [1]
+  .bss               zero     0x2000'0100    0x4  systick.o [1]
+  .bss               zero     0x2000'0104    0x4  uart.o [1]
+  .bss               zero     0x2000'0108    0x4  uart.o [1]
+  .bss               zero     0x2000'010c    0x1  bluetooth.o [1]
+                            - 0x2000'010d   0xf5
+
+"P2", part 3 of 3:                         0x800
+  CSTACK                      0x2000'0110  0x800  <Block>
+    CSTACK           uninit   0x2000'0110  0x800  <Block tail>
+                            - 0x2000'0910  0x800
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'0c68   0x800'ffff  0xf398
+  0x2000'0910  0x2000'4fff  0x46f0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xf5:
+          0x2000'0018  0xf5
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x18:
+           0x800'0b64  0x18
+    1 destination range, total size 0x18:
+          0x2000'0000  0x18
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj: [1]
+    bluetooth.o                 148               233
+    main.o                       20
+    misc.o                      128
+    nvic.o                       36
+    queue.o                     126
+    startup_stm32f10x_md.o      460
+    stm32f10x_gpio.o            192
+    stm32f10x_it.o              104
+    stm32f10x_rcc.o             256       20       20
+    stm32f10x_usart.o           442
+    system_stm32f10x.o          280        4        4
+    systick.o                   140                 4
+    uart.o                      338                 8
+    xor.o                        38
+    -------------------------------------------------
+    Total:                    2 708       24      269
+
+dl7M_tln.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+rt7M_tl.a: [3]
+    ABImemcpy.o                 166
+    cexit.o                      10
+    cmain.o                      30
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    memcpy.o                     12
+    zero_init3.o                 58
+    -------------------------------------------------
+    Total:                      372
+
+shb_l.a: [4]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          8
+    Linker created                        36    2 048
+-----------------------------------------------------
+    Grand Total:              3 116       60    2 317
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'0ae4         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0b08         --   Gb  - Linker created -
+?main                    0x800'0b09        Code  Gb  cmain.o [3]
+ADCPrescTable           0x2000'0010   0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x2000'0000  0x10  Data  Lc  stm32f10x_rcc.o [1]
+BLUETOOTH_CallBackHandle
+                         0x800'07e5  0x4e  Code  Gb  bluetooth.o [1]
+BLUETOOTH_CallBackHandle::revBuff
+                        0x2000'00bc  0x38  Data  Lc  bluetooth.o [1]
+BLUETOOTH_CallBackHandle::revByteCount
+                        0x2000'010c   0x1  Data  Lc  bluetooth.o [1]
+BLUETOOTH_Init           0x800'07b5  0x30  Code  Gb  bluetooth.o [1]
+BusFault_Handler         0x800'0a0b   0x2  Code  Gb  stm32f10x_it.o [1]
+CSTACK$$Base            0x2000'0110         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0910         --   Gb  - Linker created -
+DebugMon_Handler         0x800'0a11   0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI0_IRQHandler         0x800'0a15   0x2  Code  Gb  stm32f10x_it.o [1]
+GPIO_Init                0x800'0535  0xc0  Code  Gb  stm32f10x_gpio.o [1]
+HardFault_Handler        0x800'0a07   0x2  Code  Gb  stm32f10x_it.o [1]
+MemManage_Handler        0x800'0a09   0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler              0x800'0a05   0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Config_Init         0x800'0ac1  0x24  Code  Gb  nvic.o [1]
+NVIC_Init                0x800'098f  0x60  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                         0x800'0985   0xa  Code  Gb  misc.o [1]
+NVIC_SetPriority         0x800'08f9  0x24  Code  Lc  systick.o [1]
+PendSV_Handler           0x800'0a13   0x2  Code  Gb  stm32f10x_it.o [1]
+QUEUE_Count              0x800'08c3   0x4  Code  Gb  queue.o [1]
+QUEUE_Init               0x800'0849  0x18  Code  Gb  queue.o [1]
+QUEUE_Push               0x800'0861  0x62  Code  Gb  queue.o [1]
+RCC_APB1PeriphClockCmd   0x800'03a9  0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd   0x800'038d  0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq        0x800'02e1  0xac  Code  Gb  stm32f10x_rcc.o [1]
+Region$$Table$$Base      0x800'0ae4         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0b08         --   Gb  - Linker created -
+SVC_Handler              0x800'0a0f   0x2  Code  Gb  stm32f10x_it.o [1]
+SYSTICK_Init             0x800'094b  0x14  Code  Gb  systick.o [1]
+SetSysClock              0x800'0639   0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72          0x800'0641  0xae  Code  Lc  system_stm32f10x.o [1]
+SysTick_Config           0x800'091d  0x2e  Code  Lc  systick.o [1]
+SysTick_Handler          0x800'095f   0xa  Code  Gb  systick.o [1]
+SystemCoreClock         0x2000'0014   0x4  Data  Gb  system_stm32f10x.o [1]
+SystemInit               0x800'05f5  0x44  Code  Gb  system_stm32f10x.o [1]
+UART_CallBackInit        0x800'04ed  0x18  Code  Gb  uart.o [1]
+UART_ClockInit           0x800'0457  0x46  Code  Gb  uart.o [1]
+UART_GetData             0x800'0519  0x1a  Code  Gb  uart.o [1]
+UART_Init                0x800'049d  0x50  Code  Gb  uart.o [1]
+UART_PinInit             0x800'03e1  0x76  Code  Gb  uart.o [1]
+USART1_IRQHandler        0x800'0a17  0x22  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler        0x800'0a39  0x22  Code  Gb  stm32f10x_it.o [1]
+USART_Cmd                0x800'01b1  0x1c  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus      0x800'0229  0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus        0x800'0243  0x64  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig           0x800'01cd  0x54  Code  Gb  stm32f10x_usart.o [1]
+USART_Init               0x800'00ed  0xbc  Code  Gb  stm32f10x_usart.o [1]
+USART_ReceiveData        0x800'0221   0x8  Code  Gb  stm32f10x_usart.o [1]
+UsageFault_Handler       0x800'0a0d   0x2  Code  Gb  stm32f10x_it.o [1]
+XOR_Caculator            0x800'08c7  0x26  Code  Gb  xor.o [1]
+__aeabi_memcpy           0x800'070d        Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy4          0x800'072d        Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy8          0x800'072d        Code  Gb  ABImemcpy.o [3]
+__cmain                  0x800'0b09        Code  Gb  cmain.o [3]
+__exit                   0x800'0b51  0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'0a6d  0x2c  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'0a99  0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'0b8d        Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'02a7  0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'0b27   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000        Data  Gb  startup_stm32f10x_md.o [1]
+_call_main               0x800'0b15        Code  Gb  cmain.o [3]
+_exit                    0x800'0b45        Code  Gb  cexit.o [3]
+_main                    0x800'0b23        Code  Gb  cmain.o [3]
+bluetoothCommandBuff    0x2000'0018  0xa4  Data  Gb  bluetooth.o [1]
+bluetoothCommandQueue   0x2000'00f4   0xc  Data  Gb  bluetooth.o [1]
+exit                     0x800'0b3f   0x4  Code  Gb  exit.o [2]
+main                     0x800'0b2b  0x14  Code  Gb  main.o [1]
+memcpy                   0x800'08ed   0xc  Code  Gb  memcpy.o [3]
+tick                    0x2000'0100   0x4  Data  Lc  systick.o [1]
+type_Uart1CallBackFunc  0x2000'0104   0x4  Data  Gb  uart.o [1]
+type_Uart2CallBackFunc  0x2000'0108   0x4  Data  Gb  uart.o [1]
+
+
+[1] = D:\Project\NUVOTON\Project_Treadmill_Central\Project\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  3 116 bytes of readonly  code memory
+     60 bytes of readonly  data memory
+  2 317 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
