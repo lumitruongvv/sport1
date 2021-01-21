@@ -17,11 +17,11 @@
 /*                              DEFINE                                        */
 /******************************************************************************/
 
-#define BLUETOOTH_COMMAND_MAX_LENGH 50
-#define BLUETOOTH_COMMAND_MAX_SIZE  3
+#define BLUETOOTH_COMMAND_MAX_LENGH 5
+#define BLUETOOTH_COMMAND_MAX_SIZE  2
 #define BLUETOOTH_COMMAND_HEADER_SIZE 4
 #define BLUETOOTH_COM               USART1
-#define BLUETOOTH_BAUDRATE          57600
+#define BLUETOOTH_BAUDRATE          1200
 
 
 typedef struct BLUETOOTH_Command_t

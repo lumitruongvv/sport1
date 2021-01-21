@@ -28,7 +28,7 @@ void BLUETOOTH_Init(void)
     UART_Init(BLUETOOTH_COM, BLUETOOTH_BAUDRATE, USART_Mode_Tx|USART_Mode_Rx);
     UART_CallBackInit(BLUETOOTH_COM, BLUETOOTH_CallBackHandle);
     QUEUE_Init(&bluetoothCommandQueue, (u8*)bluetoothCommandBuff,\
-        BLUETOOTH_COMMAND_MAX_SIZE, sizeof(BLUETOOTH_Command_t));
+                BLUETOOTH_COMMAND_MAX_SIZE, sizeof(BLUETOOTH_Command_t));
     USART_Cmd(BLUETOOTH_COM, ENABLE);
 }
 

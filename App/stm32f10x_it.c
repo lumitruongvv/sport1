@@ -24,8 +24,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include "stm32f10x_usart.h"
+#include "stm32f10x_tim.h"
 #include "bluetooth.h"
-#include "Fingerprint.h"
+#include "power.h"
+#include "softuart.h"
 #include "uart.h"
 #include "delay.h"
 
@@ -159,6 +161,19 @@ void EXTI0_IRQHandler(void)
  
 }
 /**
+  * @brief  This function handles TIM2 interrupt request
+  * @param  None
+  * @retval None
+  */
+void TIM2_IRQHandler(void)
+{
+    if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
+    {
+        TIM_ClearITPendingBit(TIM2, TIM_IT_Update); 
+        Softuart_Handtick();
+    }
+}
+/**
   * @brief  This function handles USART1 interrupt request
   * @param  None
   * @retval None
@@ -181,11 +196,11 @@ void USART1_IRQHandler(void)
   */
 void USART2_IRQHandler(void)
 {
-    if(USART_GetITStatus(FINGERPRINT_COM, USART_IT_RXNE) != RESET)
+    if(USART_GetITStatus(POWER_COM, USART_IT_RXNE) != RESET)
     {
         if(type_Uart2CallBackFunc != NULL)
         {
-            type_Uart2CallBackFunc(FINGERPRINT_COM);
+            type_Uart2CallBackFunc(POWER_COM);
         }
     }
 }

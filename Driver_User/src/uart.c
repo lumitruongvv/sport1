@@ -10,7 +10,7 @@
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_rcc.h"
 #include "bluetooth.h"
-#include "Fingerprint.h"
+#include "power.h"
 
 /******************************************************************************/
 /*                              DECLARE VARIABLE                              */
@@ -37,7 +37,7 @@ void UART_PinInit(USART_TypeDef* USARTx)
         GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
         GPIO_Init(UART1_GPIO, &GPIO_InitStructure);
-    }else if(USARTx == FINGERPRINT_COM)
+    }else if(USARTx == POWER_COM)
     {
         /*Config USART2 Rx as input floating */
         GPIO_InitStructure.GPIO_Pin = UART2_RxPin;
@@ -62,7 +62,7 @@ void UART_ClockInit(USART_TypeDef* USARTx)
         RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
         /*Enable UART clock*/
         RCC_APB2PeriphClockCmd(UART1_CLK, ENABLE);
-    }else if(USARTx == FINGERPRINT_COM)
+    }else if(USARTx == POWER_COM)
     {
         /*Enable GPIO clock*/
         RCC_APB2PeriphClockCmd(UART1_GPIO_CLK, ENABLE);
@@ -104,7 +104,7 @@ void UART_CallBackInit(USART_TypeDef* USARTx, type_UartCallBackInit pHandle)
     if(USARTx == BLUETOOTH_COM)
     {
         type_Uart1CallBackFunc = pHandle;
-    }else if(USARTx == FINGERPRINT_COM)
+    }else if(USARTx == POWER_COM)
     {
         type_Uart2CallBackFunc = pHandle;
     }

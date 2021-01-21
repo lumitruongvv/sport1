@@ -776,7 +776,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>lnk0t.icf</state>
+                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f103x8.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -836,7 +836,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -1009,7 +1009,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>treadmill_central_import_lib.o</state>
                 </option>
             </data>
         </settings>
@@ -2076,13 +2076,13 @@
             <name>$PROJ_DIR$\..\App\appbluetooth_main.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\App\appfingerprint_main.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\App\appfingerprint_main.h</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\App\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\App\power_main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\App\power_main.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\App\stm32f10x_it.c</name>
@@ -2306,6 +2306,9 @@
                 <name>$PROJ_DIR$\..\Driver_User\inc\lcd.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Driver_User\inc\softuart.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Driver_User\inc\spi.h</name>
             </file>
             <file>
@@ -2322,6 +2325,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Driver_User\src\lcd.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Driver_User\src\softuart.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Driver_User\src\spi.c</name>
@@ -2364,21 +2370,18 @@
             </file>
         </group>
         <group>
-            <name>Fingerprint</name>
-            <file>
-                <name>$PROJ_DIR$\..\Mid\Fingerprint\Fingerprint.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Mid\Fingerprint\Fingerprintt.c</name>
-            </file>
-        </group>
-        <group>
             <name>Serial</name>
             <file>
                 <name>$PROJ_DIR$\..\Mid\Serial\bluetooth.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Mid\Serial\bluetooth.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Mid\Serial\power.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Mid\Serial\power.h</name>
             </file>
         </group>
         <group>
