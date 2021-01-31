@@ -12,6 +12,7 @@
 #include "xor.h"
 
 volatile u8 checkconnect = 0;
+volatile u8 startrun = 0;
 
 /******************************************************************************/
 /*                              FUNCTION                                      */
@@ -141,7 +142,7 @@ static void POWER_CheckConnect(u8 type,u8 *buff, u8 len)
  */
 static void POWER_StartRun(u8 type,u8 *buff, u8 len)
 {
-
+    startrun = 1;
 }
 
 /**

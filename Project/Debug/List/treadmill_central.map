@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.30.2.160/W32 for ARM                  17/Jan/2021  15:15:42
+# IAR ELF Linker V8.30.2.160/W32 for ARM                  31/Jan/2021  11:13:29
 # Copyright 2007-2018 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        D:\Project\NUVOTON\Project_Treadmill_Central\sport1\Project\Debug\List\treadmill_central.map
 #    Command line =  
-#        -f C:\Users\vuvan\AppData\Local\Temp\EW75E6.tmp
+#        -f C:\Users\vuvan\AppData\Local\Temp\EWACA8.tmp
 #        (D:\Project\NUVOTON\Project_Treadmill_Central\sport1\Project\Debug\Obj\adc.o
 #        D:\Project\NUVOTON\Project_Treadmill_Central\sport1\Project\Debug\Obj\appbluetooth_main.o
 #        D:\Project\NUVOTON\Project_Treadmill_Central\sport1\Project\Debug\Obj\bluetooth.o
@@ -95,136 +95,141 @@ define block HEAP with size = 2K, alignment = 8 { };
           rw, block CSTACK, block HEAP };
 initialize by copy { rw };
 
-  Section            Kind         Address   Size  Object
-  -------            ----         -------   ----  ------
-"A0":                                       0xec
-  .intvec            ro code   0x800'0000   0xec  startup_stm32f10x_md.o [1]
-                             - 0x800'00ec   0xec
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xec
+  .intvec            ro code   0x800'0000    0xec  startup_stm32f10x_md.o [1]
+                             - 0x800'00ec    0xec
 
-"P1":                                      0xfac
-  .text              ro code   0x800'00ec  0x1ba  stm32f10x_usart.o [1]
-  .text              ro code   0x800'02a6   0x3a  zero_init3.o [3]
-  .text              ro code   0x800'02e0  0x110  stm32f10x_rcc.o [1]
-  .text              ro code   0x800'03f0  0x164  softuart.o [1]
-  .text              ro code   0x800'0554   0xcc  stm32f10x_gpio.o [1]
-  .text              ro code   0x800'0620  0x11c  stm32f10x_tim.o [1]
-  .text              ro code   0x800'073c  0x152  uart.o [1]
-  .text              ro code   0x800'0890  0x118  system_stm32f10x.o [1]
-  .text              ro code   0x800'09a8  0x114  systick.o [1]
-  .text              ro code   0x800'0abc   0xa6  ABImemcpy.o [3]
-  .text              ro code   0x800'0b64   0x94  bluetooth.o [1]
-  .text              ro code   0x800'0bf8   0x7e  queue.o [1]
-  .text              ro code   0x800'0c76   0x26  xor.o [1]
-  .text              ro code   0x800'0c9c    0xc  memcpy.o [3]
-  .text              ro code   0x800'0ca8   0x94  power.o [1]
-  .text              ro code   0x800'0d3c   0x88  stm32f10x_it.o [1]
-  .text              ro code   0x800'0dc4   0x80  misc.o [1]
-  .text              ro code   0x800'0e44   0x54  nvic.o [1]
-  .text              ro code   0x800'0e98   0x34  main.o [1]
-  .text              ro code   0x800'0ecc   0x2c  copy_init3.o [3]
-  .text              ro code   0x800'0ef8   0x28  data_init.o [3]
-  .iar.init_table    const     0x800'0f20   0x24  - Linker created -
-  Initializer bytes  const     0x800'0f44   0x20  <for P2-1>
-  .text              ro code   0x800'0f64   0x1e  cmain.o [3]
-  .text              ro code   0x800'0f82    0x4  low_level_init.o [2]
-  .text              ro code   0x800'0f86    0x4  exit.o [2]
-  .text              ro code   0x800'0f8c    0xa  cexit.o [3]
-  .text              ro code   0x800'0f98   0x14  exit.o [4]
-  .text              ro code   0x800'0fac   0x10  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fbc    0xc  cstartup_M.o [3]
-  .text              ro code   0x800'0fc8    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fcc    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fd0    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fd4    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fd8    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fdc    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fe0    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fe4    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fe8    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0fec    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0ff0    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0ff4    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0ff8    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'0ffc    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1000    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1004    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1008    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'100c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1010    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1014    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1018    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'101c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1020    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1024    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1028    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'102c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1030    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1034    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1038    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'103c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1040    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1044    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1048    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'104c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1050    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1054    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1058    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'105c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1060    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1064    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1068    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'106c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1070    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1074    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1078    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'107c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1080    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1084    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1088    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'108c    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1090    0x4  startup_stm32f10x_md.o [1]
-  .text              ro code   0x800'1094    0x4  startup_stm32f10x_md.o [1]
-  .rodata            const     0x800'1098    0x0  zero_init3.o [3]
-  .rodata            const     0x800'1098    0x0  copy_init3.o [3]
-                             - 0x800'1098  0xfac
+"P1":                                      0x10d8
+  .text              ro code   0x800'00ec   0x1c2  stm32f10x_usart.o [1]
+  .text              ro code   0x800'02ae    0x3a  zero_init3.o [3]
+  .text              ro code   0x800'02e8   0x110  stm32f10x_rcc.o [1]
+  .text              ro code   0x800'03f8   0x188  uart.o [1]
+  .text              ro code   0x800'0580    0xc6  stm32f10x_gpio.o [1]
+  .text              ro code   0x800'0648   0x11c  stm32f10x_tim.o [1]
+  .text              ro code   0x800'0764   0x118  system_stm32f10x.o [1]
+  .text              ro code   0x800'087c   0x114  systick.o [1]
+  .text              ro code   0x800'0990    0xd0  queue.o [1]
+  .text              ro code   0x800'0a60     0xc  memcpy.o [3]
+  .text              ro code   0x800'0a6c    0xa6  ABImemcpy.o [3]
+  .text              ro code   0x800'0b14    0xcc  power.o [1]
+  .text              ro code   0x800'0be0    0x26  xor.o [1]
+  .text              ro code   0x800'0c08    0x7c  power_main.o [1]
+  .text              ro code   0x800'0c84    0x94  bluetooth.o [1]
+  .text              ro code   0x800'0d18    0x94  softuart.o [1]
+  .text              ro code   0x800'0dac    0x88  main.o [1]
+  .text              ro code   0x800'0e34    0x54  nvic.o [1]
+  .text              ro code   0x800'0e88    0x80  misc.o [1]
+  .text              ro code   0x800'0f08    0x88  stm32f10x_it.o [1]
+  .rodata            const     0x800'0f90    0x60  power_main.o [1]
+  .text              ro code   0x800'0ff0    0x2c  copy_init3.o [3]
+  .text              ro code   0x800'101c    0x28  data_init.o [3]
+  Initializer bytes  const     0x800'1044    0x28  <for P2-1>
+  .iar.init_table    const     0x800'106c    0x24  - Linker created -
+  .text              ro code   0x800'1090    0x1e  cmain.o [3]
+  .text              ro code   0x800'10ae     0x4  low_level_init.o [2]
+  .text              ro code   0x800'10b2     0x4  exit.o [2]
+  .text              ro code   0x800'10b8     0xa  cexit.o [3]
+  .text              ro code   0x800'10c4    0x14  exit.o [4]
+  .text              ro code   0x800'10d8    0x10  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'10e8     0xc  cstartup_M.o [3]
+  .text              ro code   0x800'10f4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'10f8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'10fc     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1100     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1104     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1108     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'110c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1110     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1114     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1118     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'111c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1120     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1124     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1128     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'112c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1130     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1134     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1138     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'113c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1140     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1144     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1148     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'114c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1150     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1154     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1158     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'115c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1160     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1164     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1168     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'116c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1170     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1174     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1178     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'117c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1180     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1184     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1188     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'118c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1190     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1194     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'1198     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'119c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11a0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11a4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11a8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11ac     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11b0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11b4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11b8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11bc     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code   0x800'11c0     0x4  startup_stm32f10x_md.o [1]
+  .rodata            const     0x800'11c4     0x0  zero_init3.o [3]
+  .rodata            const     0x800'11c4     0x0  copy_init3.o [3]
+                             - 0x800'11c4  0x10d8
 
-"P2", part 1 of 3:                          0x20
-  P2-1                        0x2000'0000   0x20  <Init block>
-    .data            inited   0x2000'0000    0x8  main.o [1]
-    .data            inited   0x2000'0008   0x10  stm32f10x_rcc.o [1]
-    .data            inited   0x2000'0018    0x4  stm32f10x_rcc.o [1]
-    .data            inited   0x2000'001c    0x4  system_stm32f10x.o [1]
-                            - 0x2000'0020   0x20
+"P2", part 1 of 3:                           0x28
+  P2-1                        0x2000'0000    0x28  <Init block>
+    .data            inited   0x2000'0000     0x8  main.o [1]
+    .data            inited   0x2000'0008     0x8  main.o [1]
+    .data            inited   0x2000'0010    0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'0020     0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'0024     0x4  system_stm32f10x.o [1]
+                            - 0x2000'0028    0x28
 
-"P2", part 2 of 3:                          0x74
-  .bss               zero     0x2000'0020   0x14  bluetooth.o [1]
-  .bss               zero     0x2000'0034   0x14  power.o [1]
-  .bss               zero     0x2000'0048    0xc  bluetooth.o [1]
-  .bss               zero     0x2000'0054    0xc  bluetooth.o [1]
-  .bss               zero     0x2000'0060    0xc  power.o [1]
-  .bss               zero     0x2000'006c    0xc  power.o [1]
-  .bss               zero     0x2000'0078    0x4  softuart.o [1]
-  .bss               zero     0x2000'007c    0x4  systick.o [1]
-  .bss               zero     0x2000'0080    0x4  systick.o [1]
-  .bss               zero     0x2000'0084    0x4  systick.o [1]
-  .bss               zero     0x2000'0088    0x4  uart.o [1]
-  .bss               zero     0x2000'008c    0x4  uart.o [1]
-  .bss               zero     0x2000'0090    0x1  bluetooth.o [1]
-  .bss               zero     0x2000'0091    0x1  power.o [1]
-                            - 0x2000'0092   0x72
+"P2", part 2 of 3:                           0x78
+  .bss               zero     0x2000'0028    0x14  bluetooth.o [1]
+  .bss               zero     0x2000'003c    0x14  power.o [1]
+  .bss               zero     0x2000'0050     0xc  bluetooth.o [1]
+  .bss               zero     0x2000'005c     0xc  bluetooth.o [1]
+  .bss               zero     0x2000'0068     0xc  power.o [1]
+  .bss               zero     0x2000'0074     0xc  power.o [1]
+  .bss               zero     0x2000'0080     0x4  softuart.o [1]
+  .bss               zero     0x2000'0084     0x4  systick.o [1]
+  .bss               zero     0x2000'0088     0x4  systick.o [1]
+  .bss               zero     0x2000'008c     0x4  systick.o [1]
+  .bss               zero     0x2000'0090     0x4  uart.o [1]
+  .bss               zero     0x2000'0094     0x4  uart.o [1]
+  .bss               zero     0x2000'0098     0x1  bluetooth.o [1]
+  .bss               zero     0x2000'0099     0x1  main.o [1]
+  .bss               zero     0x2000'009a     0x1  power.o [1]
+  .bss               zero     0x2000'009b     0x1  power_main.o [1]
+  .bss               zero     0x2000'009c     0x1  power_main.o [1]
+                            - 0x2000'009d    0x75
 
-"P2", part 3 of 3:                         0x800
-  CSTACK                      0x2000'0098  0x800  <Block>
-    CSTACK           uninit   0x2000'0098  0x800  <Block tail>
-                            - 0x2000'0898  0x800
+"P2", part 3 of 3:                          0x800
+  CSTACK                      0x2000'00a0   0x800  <Block>
+    CSTACK           uninit   0x2000'00a0   0x800  <Block tail>
+                            - 0x2000'08a0   0x800
 
 Unused ranges:
 
          From           To    Size
          ----           --    ----
-   0x800'1098   0x800'ffff  0xef68
-  0x2000'0094  0x2000'0097     0x4
-  0x2000'0898  0x2000'4fff  0x4768
+   0x800'11c4   0x800'ffff  0xee3c
+  0x2000'08a0  0x2000'4fff  0x4760
 
 
 *******************************************************************************
@@ -234,14 +239,14 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x72:
-          0x2000'0020  0x72
+    1 destination range, total size 0x75:
+          0x2000'0028  0x75
 
 Copy (__iar_copy_init3)
-    1 source range, total size 0x20:
-           0x800'0f44  0x20
-    1 destination range, total size 0x20:
-          0x2000'0000  0x20
+    1 source range, total size 0x28:
+           0x800'1044  0x28
+    1 destination range, total size 0x28:
+          0x2000'0000  0x28
 
 
 
@@ -257,24 +262,25 @@ command line/config:
 
 D:\Project\NUVOTON\Project_Treadmill_Central\sport1\Project\Debug\Obj: [1]
     bluetooth.o                 148                45
-    main.o                       52        8        8
+    main.o                      136       16       17
     misc.o                      128
     nvic.o                       84
-    power.o                     148                45
-    queue.o                     126
-    softuart.o                  356                 4
+    power.o                     204                45
+    power_main.o                124       96        2
+    queue.o                     208
+    softuart.o                  148                 4
     startup_stm32f10x_md.o      460
-    stm32f10x_gpio.o            204
+    stm32f10x_gpio.o            198
     stm32f10x_it.o              136
     stm32f10x_rcc.o             272       20       20
     stm32f10x_tim.o             284
-    stm32f10x_usart.o           442
+    stm32f10x_usart.o           450
     system_stm32f10x.o          280        4        4
     systick.o                   276                12
-    uart.o                      338                 8
+    uart.o                      392                 8
     xor.o                        38
     -------------------------------------------------
-    Total:                    3 772       32      146
+    Total:                    3 966      136      157
 
 dl7M_tln.a: [2]
     exit.o                        4
@@ -299,10 +305,10 @@ shb_l.a: [4]
     -------------------------------------------------
     Total:                       20
 
-    Gaps                          8
+    Gaps                         10
     Linker created                        36    2 048
 -----------------------------------------------------
-    Grand Total:              4 180       68    2 194
+    Grand Total:              4 376      172    2 205
 
 
 *******************************************************************************
@@ -311,114 +317,135 @@ shb_l.a: [4]
 
 Entry                       Address  Size  Type      Object
 -----                       -------  ----  ----      ------
-.iar.init_table$$Base    0x800'0f20         --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'0f44         --   Gb  - Linker created -
-?main                    0x800'0f65        Code  Gb  cmain.o [3]
-ADCPrescTable           0x2000'0018   0x4  Data  Lc  stm32f10x_rcc.o [1]
-APBAHBPrescTable        0x2000'0008  0x10  Data  Lc  stm32f10x_rcc.o [1]
+.iar.init_table$$Base    0x800'106c         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'1090         --   Gb  - Linker created -
+?main                    0x800'1091        Code  Gb  cmain.o [3]
+ADCPrescTable           0x2000'0020   0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x2000'0010  0x10  Data  Lc  stm32f10x_rcc.o [1]
 BLUETOOTH_CallBackHandle
-                         0x800'0b95  0x4e  Code  Gb  bluetooth.o [1]
+                         0x800'0cb5  0x4e  Code  Gb  bluetooth.o [1]
 BLUETOOTH_CallBackHandle::revBuff
-                        0x2000'0054   0xc  Data  Lc  bluetooth.o [1]
+                        0x2000'005c   0xc  Data  Lc  bluetooth.o [1]
 BLUETOOTH_CallBackHandle::revByteCount
-                        0x2000'0090   0x1  Data  Lc  bluetooth.o [1]
-BLUETOOTH_Init           0x800'0b65  0x30  Code  Gb  bluetooth.o [1]
-BusFault_Handler         0x800'0d43   0x2  Code  Gb  stm32f10x_it.o [1]
-CSTACK$$Base            0x2000'0098         --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'0898         --   Gb  - Linker created -
-DebugMon_Handler         0x800'0d49   0x2  Code  Gb  stm32f10x_it.o [1]
-EXTI0_IRQHandler         0x800'0d4d   0x2  Code  Gb  stm32f10x_it.o [1]
-GPIO_Init                0x800'0555  0xc0  Code  Gb  stm32f10x_gpio.o [1]
-GPIO_ResetBits           0x800'061b   0x6  Code  Gb  stm32f10x_gpio.o [1]
-GPIO_SetBits             0x800'0615   0x6  Code  Gb  stm32f10x_gpio.o [1]
-HardFault_Handler        0x800'0d3f   0x2  Code  Gb  stm32f10x_it.o [1]
-MemManage_Handler        0x800'0d41   0x2  Code  Gb  stm32f10x_it.o [1]
-NMI_Handler              0x800'0d3d   0x2  Code  Gb  stm32f10x_it.o [1]
-NVIC_Config_Init         0x800'0e45  0x54  Code  Gb  nvic.o [1]
-NVIC_Init                0x800'0dcf  0x60  Code  Gb  misc.o [1]
+                        0x2000'0098   0x1  Data  Lc  bluetooth.o [1]
+BLUETOOTH_Init           0x800'0c85  0x30  Code  Gb  bluetooth.o [1]
+BusFault_Handler         0x800'0f0f   0x2  Code  Gb  stm32f10x_it.o [1]
+CSTACK$$Base            0x2000'00a0         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'08a0         --   Gb  - Linker created -
+DebugMon_Handler         0x800'0f15   0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI0_IRQHandler         0x800'0f19   0x2  Code  Gb  stm32f10x_it.o [1]
+GPIO_Init                0x800'0581  0xc0  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits           0x800'0641   0x6  Code  Gb  stm32f10x_gpio.o [1]
+HardFault_Handler        0x800'0f0b   0x2  Code  Gb  stm32f10x_it.o [1]
+MemManage_Handler        0x800'0f0d   0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler              0x800'0f09   0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Config_Init         0x800'0e35  0x54  Code  Gb  nvic.o [1]
+NVIC_Init                0x800'0e93  0x60  Code  Gb  misc.o [1]
 NVIC_PriorityGroupConfig
-                         0x800'0dc5   0xa  Code  Gb  misc.o [1]
-NVIC_SetPriority         0x800'09a9  0x24  Code  Lc  systick.o [1]
-POWER_CallBackHandle     0x800'0cd9  0x4e  Code  Gb  power.o [1]
+                         0x800'0e89   0xa  Code  Gb  misc.o [1]
+NVIC_SetPriority         0x800'087d  0x24  Code  Lc  systick.o [1]
+POWER_CallBackHandle     0x800'0b45  0x4e  Code  Gb  power.o [1]
 POWER_CallBackHandle::revBuff
-                        0x2000'006c   0xc  Data  Lc  power.o [1]
+                        0x2000'0074   0xc  Data  Lc  power.o [1]
 POWER_CallBackHandle::revByteCount
-                        0x2000'0091   0x1  Data  Lc  power.o [1]
-POWER_Init               0x800'0ca9  0x30  Code  Gb  power.o [1]
-PendSV_Handler           0x800'0d4b   0x2  Code  Gb  stm32f10x_it.o [1]
-QUEUE_Count              0x800'0c73   0x4  Code  Gb  queue.o [1]
-QUEUE_Init               0x800'0bf9  0x18  Code  Gb  queue.o [1]
-QUEUE_Push               0x800'0c11  0x62  Code  Gb  queue.o [1]
-RCC_APB1PeriphClockCmd   0x800'03b9  0x1c  Code  Gb  stm32f10x_rcc.o [1]
-RCC_APB2PeriphClockCmd   0x800'039d  0x1c  Code  Gb  stm32f10x_rcc.o [1]
-RCC_GetClocksFreq        0x800'02f1  0xac  Code  Gb  stm32f10x_rcc.o [1]
-RCC_PCLK1Config          0x800'02e1  0x10  Code  Gb  stm32f10x_rcc.o [1]
-Region$$Table$$Base      0x800'0f20         --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'0f44         --   Gb  - Linker created -
-SVC_Handler              0x800'0d47   0x2  Code  Gb  stm32f10x_it.o [1]
-SYSTICK_Delay_ms         0x800'0a1f  0x78  Code  Gb  systick.o [1]
-SYSTICK_Delay_ms::t0    0x2000'0080   0x4  Data  Lc  systick.o [1]
-SYSTICK_Delay_ms::t1    0x2000'0084   0x4  Data  Lc  systick.o [1]
-SYSTICK_Get_Tick         0x800'0a19   0x6  Code  Gb  systick.o [1]
-SYSTICK_Init             0x800'09fb  0x14  Code  Gb  systick.o [1]
-SetSysClock              0x800'08d5   0x8  Code  Lc  system_stm32f10x.o [1]
-SetSysClockTo72          0x800'08dd  0xae  Code  Lc  system_stm32f10x.o [1]
-Softuart_Config          0x800'0401  0x82  Code  Gb  softuart.o [1]
-Softuart_Gettick         0x800'03fb   0x6  Code  Gb  softuart.o [1]
-Softuart_Handtick        0x800'03f1   0xa  Code  Gb  softuart.o [1]
-Softuart_SendByte        0x800'0483  0xa6  Code  Gb  softuart.o [1]
-Softuart_SendData        0x800'0531  0x24  Code  Gb  softuart.o [1]
-SysTick_Config           0x800'09cd  0x2e  Code  Lc  systick.o [1]
-SysTick_Handler          0x800'0a0f   0xa  Code  Gb  systick.o [1]
-SystemCoreClock         0x2000'001c   0x4  Data  Gb  system_stm32f10x.o [1]
-SystemInit               0x800'0891  0x44  Code  Gb  system_stm32f10x.o [1]
-TIM2_IRQHandler          0x800'0d4f  0x20  Code  Gb  stm32f10x_it.o [1]
-TIM_ClearITPendingBit    0x800'070b   0x8  Code  Gb  stm32f10x_tim.o [1]
-TIM_Cmd                  0x800'06b3  0x1c  Code  Gb  stm32f10x_tim.o [1]
-TIM_GetITStatus          0x800'06e7  0x24  Code  Gb  stm32f10x_tim.o [1]
-TIM_ITConfig             0x800'06cf  0x18  Code  Gb  stm32f10x_tim.o [1]
-TIM_TimeBaseInit         0x800'0621  0x92  Code  Gb  stm32f10x_tim.o [1]
-UART_CallBackInit        0x800'0849  0x18  Code  Gb  uart.o [1]
-UART_ClockInit           0x800'07b3  0x46  Code  Gb  uart.o [1]
-UART_GetData             0x800'0875  0x1a  Code  Gb  uart.o [1]
-UART_Init                0x800'07f9  0x50  Code  Gb  uart.o [1]
-UART_PinInit             0x800'073d  0x76  Code  Gb  uart.o [1]
-USART1_IRQHandler        0x800'0d6f  0x22  Code  Gb  stm32f10x_it.o [1]
-USART2_IRQHandler        0x800'0d91  0x22  Code  Gb  stm32f10x_it.o [1]
+                        0x2000'009a   0x1  Data  Lc  power.o [1]
+POWER_CheckCommandExistAndExecutes
+                         0x800'0c09  0x4a  Code  Gb  power_main.o [1]
+POWER_CheckConnect       0x800'0c5b   0x8  Code  Lc  power_main.o [1]
+POWER_DeviceAnnounce     0x800'0c59   0x2  Code  Lc  power_main.o [1]
+POWER_GetAllState        0x800'0c83   0x2  Code  Lc  power_main.o [1]
+POWER_GetStateFloor      0x800'0c7f   0x2  Code  Lc  power_main.o [1]
+POWER_GetStateMotor      0x800'0c7d   0x2  Code  Lc  power_main.o [1]
+POWER_Init               0x800'0b15  0x30  Code  Gb  power.o [1]
+POWER_Proc               0x800'0b93  0x2a  Code  Gb  power.o [1]
+POWER_Send               0x800'0bbd  0x10  Code  Gb  power.o [1]
+POWER_SendFirstTime      0x800'0c53   0x2  Code  Lc  power_main.o [1]
+POWER_SendFirstTime1     0x800'0c55   0x2  Code  Lc  power_main.o [1]
+POWER_SendFirstTime2     0x800'0c57   0x2  Code  Lc  power_main.o [1]
+POWER_SetSpeedMotor      0x800'0c81   0x2  Code  Lc  power_main.o [1]
+POWER_StartRun           0x800'0c63   0x8  Code  Lc  power_main.o [1]
+POWER_StopRun            0x800'0c79   0x2  Code  Lc  power_main.o [1]
+POWER_UpDownFloor        0x800'0c7b   0x2  Code  Lc  power_main.o [1]
+PendSV_Handler           0x800'0f17   0x2  Code  Gb  stm32f10x_it.o [1]
+QUEUE_Count              0x800'0a5d   0x4  Code  Gb  queue.o [1]
+QUEUE_Empty              0x800'0a4f   0xe  Code  Gb  queue.o [1]
+QUEUE_Get                0x800'0a0b  0x44  Code  Gb  queue.o [1]
+QUEUE_Init               0x800'0991  0x18  Code  Gb  queue.o [1]
+QUEUE_Push               0x800'09a9  0x62  Code  Gb  queue.o [1]
+RCC_APB1PeriphClockCmd   0x800'03c1  0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd   0x800'03a5  0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq        0x800'02f9  0xac  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK1Config          0x800'02e9  0x10  Code  Gb  stm32f10x_rcc.o [1]
+Region$$Table$$Base      0x800'106c         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'1090         --   Gb  - Linker created -
+SVC_Handler              0x800'0f13   0x2  Code  Gb  stm32f10x_it.o [1]
+SYSTICK_Delay_ms         0x800'08f3  0x78  Code  Gb  systick.o [1]
+SYSTICK_Delay_ms::t0    0x2000'0088   0x4  Data  Lc  systick.o [1]
+SYSTICK_Delay_ms::t1    0x2000'008c   0x4  Data  Lc  systick.o [1]
+SYSTICK_Get_Tick         0x800'08ed   0x6  Code  Gb  systick.o [1]
+SYSTICK_Init             0x800'08cf  0x14  Code  Gb  systick.o [1]
+SetSysClock              0x800'07a9   0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72          0x800'07b1  0xae  Code  Lc  system_stm32f10x.o [1]
+Softuart_Config          0x800'0d23  0x82  Code  Gb  softuart.o [1]
+Softuart_Handtick        0x800'0d19   0xa  Code  Gb  softuart.o [1]
+SysTick_Config           0x800'08a1  0x2e  Code  Lc  systick.o [1]
+SysTick_Handler          0x800'08e3   0xa  Code  Gb  systick.o [1]
+SystemCoreClock         0x2000'0024   0x4  Data  Gb  system_stm32f10x.o [1]
+SystemInit               0x800'0765  0x44  Code  Gb  system_stm32f10x.o [1]
+TIM2_IRQHandler          0x800'0f1b  0x20  Code  Gb  stm32f10x_it.o [1]
+TIM_ClearITPendingBit    0x800'0733   0x8  Code  Gb  stm32f10x_tim.o [1]
+TIM_Cmd                  0x800'06db  0x1c  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus          0x800'070f  0x24  Code  Gb  stm32f10x_tim.o [1]
+TIM_ITConfig             0x800'06f7  0x18  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit         0x800'0649  0x92  Code  Gb  stm32f10x_tim.o [1]
+UART_CallBackInit        0x800'0505  0x18  Code  Gb  uart.o [1]
+UART_ClockInit           0x800'046f  0x46  Code  Gb  uart.o [1]
+UART_GetData             0x800'0567  0x1a  Code  Gb  uart.o [1]
+UART_Init                0x800'04b5  0x50  Code  Gb  uart.o [1]
+UART_PinInit             0x800'03f9  0x76  Code  Gb  uart.o [1]
+UART_SendData            0x800'0531  0x36  Code  Gb  uart.o [1]
+USART1_IRQHandler        0x800'0f3b  0x22  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler        0x800'0f5d  0x22  Code  Gb  stm32f10x_it.o [1]
 USART_Cmd                0x800'01b1  0x1c  Code  Gb  stm32f10x_usart.o [1]
-USART_GetFlagStatus      0x800'0229  0x1a  Code  Gb  stm32f10x_usart.o [1]
-USART_GetITStatus        0x800'0243  0x64  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus      0x800'0231  0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus        0x800'024b  0x64  Code  Gb  stm32f10x_usart.o [1]
 USART_ITConfig           0x800'01cd  0x54  Code  Gb  stm32f10x_usart.o [1]
 USART_Init               0x800'00ed  0xbc  Code  Gb  stm32f10x_usart.o [1]
-USART_ReceiveData        0x800'0221   0x8  Code  Gb  stm32f10x_usart.o [1]
-UsageFault_Handler       0x800'0d45   0x2  Code  Gb  stm32f10x_it.o [1]
-XOR_Caculator            0x800'0c77  0x26  Code  Gb  xor.o [1]
-__aeabi_memcpy           0x800'0abd        Code  Gb  ABImemcpy.o [3]
-__aeabi_memcpy4          0x800'0add        Code  Gb  ABImemcpy.o [3]
-__aeabi_memcpy8          0x800'0add        Code  Gb  ABImemcpy.o [3]
-__cmain                  0x800'0f65        Code  Gb  cmain.o [3]
-__exit                   0x800'0f99  0x14  Code  Gb  exit.o [4]
-__iar_copy_init3         0x800'0ecd  0x2c  Code  Gb  copy_init3.o [3]
-__iar_data_init3         0x800'0ef9  0x28  Code  Gb  data_init.o [3]
-__iar_program_start      0x800'0fbd        Code  Gb  cstartup_M.o [3]
-__iar_zero_init3         0x800'02a7  0x3a  Code  Gb  zero_init3.o [3]
-__low_level_init         0x800'0f83   0x4  Code  Gb  low_level_init.o [2]
+USART_ReceiveData        0x800'0229   0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData           0x800'0221   0x8  Code  Gb  stm32f10x_usart.o [1]
+UsageFault_Handler       0x800'0f11   0x2  Code  Gb  stm32f10x_it.o [1]
+XOR_Caculator            0x800'0be1  0x26  Code  Gb  xor.o [1]
+__aeabi_memcpy           0x800'0a6d        Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy4          0x800'0a8d        Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy8          0x800'0a8d        Code  Gb  ABImemcpy.o [3]
+__cmain                  0x800'1091        Code  Gb  cmain.o [3]
+__exit                   0x800'10c5  0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'0ff1  0x2c  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'101d  0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'10e9        Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'02af  0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'10af   0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000        Data  Gb  startup_stm32f10x_md.o [1]
-_call_main               0x800'0f71        Code  Gb  cmain.o [3]
-_exit                    0x800'0f8d        Code  Gb  cexit.o [3]
-_main                    0x800'0f7f        Code  Gb  cmain.o [3]
-bluetoothCommandBuff    0x2000'0020  0x14  Data  Gb  bluetooth.o [1]
-bluetoothCommandQueue   0x2000'0048   0xc  Data  Gb  bluetooth.o [1]
-buff                    0x2000'0000   0x8  Data  Gb  main.o [1]
-exit                     0x800'0f87   0x4  Code  Gb  exit.o [2]
-main                     0x800'0e99  0x34  Code  Gb  main.o [1]
-memcpy                   0x800'0c9d   0xc  Code  Gb  memcpy.o [3]
-powerCommandBuff        0x2000'0034  0x14  Data  Gb  power.o [1]
-powerCommandQueue       0x2000'0060   0xc  Data  Gb  power.o [1]
-tick                    0x2000'007c   0x4  Data  Lc  systick.o [1]
-tickcount               0x2000'0078   0x4  Data  Lc  softuart.o [1]
-type_Uart1CallBackFunc  0x2000'0088   0x4  Data  Gb  uart.o [1]
-type_Uart2CallBackFunc  0x2000'008c   0x4  Data  Gb  uart.o [1]
+_call_main               0x800'109d        Code  Gb  cmain.o [3]
+_exit                    0x800'10b9        Code  Gb  cexit.o [3]
+_main                    0x800'10ab        Code  Gb  cmain.o [3]
+bluetoothCommandBuff    0x2000'0028  0x14  Data  Gb  bluetooth.o [1]
+bluetoothCommandQueue   0x2000'0050   0xc  Data  Gb  bluetooth.o [1]
+checkConnect            0x2000'0000   0x8  Data  Gb  main.o [1]
+checkconnect            0x2000'009b   0x1  Data  Gb  power_main.o [1]
+exit                     0x800'10b3   0x4  Code  Gb  exit.o [2]
+main                     0x800'0dad  0x88  Code  Gb  main.o [1]
+memcpy                   0x800'0a61   0xc  Code  Gb  memcpy.o [3]
+powerCommandBuff        0x2000'003c  0x14  Data  Gb  power.o [1]
+powerCommandQueue       0x2000'0068   0xc  Data  Gb  power.o [1]
+powerListCommand         0x800'0f90  0x60  Data  Lc  power_main.o [1]
+startRun                0x2000'0008   0x8  Data  Gb  main.o [1]
+startrun                0x2000'009c   0x1  Data  Gb  power_main.o [1]
+step                    0x2000'0099   0x1  Data  Gb  main.o [1]
+tick                    0x2000'0084   0x4  Data  Lc  systick.o [1]
+tickcount               0x2000'0080   0x4  Data  Lc  softuart.o [1]
+type_Uart1CallBackFunc  0x2000'0090   0x4  Data  Gb  uart.o [1]
+type_Uart2CallBackFunc  0x2000'0094   0x4  Data  Gb  uart.o [1]
 
 
 [1] = D:\Project\NUVOTON\Project_Treadmill_Central\sport1\Project\Debug\Obj
@@ -426,9 +453,9 @@ type_Uart2CallBackFunc  0x2000'008c   0x4  Data  Gb  uart.o [1]
 [3] = rt7M_tl.a
 [4] = shb_l.a
 
-  4 180 bytes of readonly  code memory
-     68 bytes of readonly  data memory
-  2 194 bytes of readwrite data memory
+  4 376 bytes of readonly  code memory
+    172 bytes of readonly  data memory
+  2 205 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
